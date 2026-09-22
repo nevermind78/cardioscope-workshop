@@ -6,6 +6,7 @@ REPO = "https://github.com/nevermind78/cardioscope-workshop"
 SETUP = r'''# Setup: run this cell first (about 1 minute on Colab)
 %matplotlib inline
 import os, sys, subprocess
+os.environ.setdefault("KMP_DUPLICATE_LIB_OK", "TRUE")  # avoid an OpenMP crash (MKL + PyTorch both bundle libiomp5md)
 REPO_URL = "https://github.com/nevermind78/cardioscope-workshop.git"   # set once by the instructor
 IN_COLAB = "google.colab" in sys.modules
 if IN_COLAB:
