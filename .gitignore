@@ -1,0 +1,10 @@
+# Instructor-only material (answer key / results not meant for participants)
+GUIDE_ANIMATEUR.md
+
+# Downloaded ECG data (fetched on demand by D.download_mitdb / scripts/prepare_data.py)
+data/
+
+# Python / Jupyter cruft
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
