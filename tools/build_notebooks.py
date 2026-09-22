@@ -1,12 +1,12 @@
 """Builds the two workshop notebooks (run from the repository root)."""
 import nbformat as nbf
 
-REPO = "https://github.com/YOUR-ACCOUNT/cardioscope-workshop"
+REPO = "https://github.com/nevermind78/cardioscope-workshop"
 
 SETUP = r'''# Setup: run this cell first (about 1 minute on Colab)
 %matplotlib inline
 import os, sys, subprocess
-REPO_URL = "https://github.com/YOUR-ACCOUNT/cardioscope-workshop.git"   # set once by the instructor
+REPO_URL = "https://github.com/nevermind78/cardioscope-workshop.git"   # set once by the instructor
 IN_COLAB = "google.colab" in sys.modules
 if IN_COLAB:
     if not os.path.isdir("/content/cardioscope-workshop"):
