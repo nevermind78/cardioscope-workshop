@@ -1,7 +1,7 @@
 # CardioScope: Deep Learning for Cardiovascular Risk Detection
 
 Hands-on workshop material, **BIOVANCE 2026** (IEEE EMBS EPS SBC and IEEE EMBS IIT SBC),
-École Polytechnique de Sousse, September 26, 2026. Instructor: Abdallah Khemais (ISITCOM, University of Sousse).
+École Polytechnique de Sousse, September 26, 2026. Instructor: Abdallah Khemais.
 
 Participants build **CardioScope**, an AI Holter assistant that reads a single-lead ECG like a cardiologist:
 it detects every heartbeat, classifies it (AAMI classes N, S, V, F), turns the labels into a patient-level
@@ -13,8 +13,8 @@ arrhythmic risk profile, and is deployed as a web app they open on their phone.
 
 | Part | Time | Labs |
 |---|---|---|
-| 1. From raw ECG to beat-by-beat diagnosis | 9:00 to 11:00 | 1. Explore MIT-BIH. 2. A first 1D CNN. 3. The leakage trap. 4. Think like a cardiologist (rhythm + patient's dominant beat) |
-| 2. From model to clinical tool | 14:00 to 15:30 | 5. Calibration and triage. 6. Grad-CAM and counterfactuals. 7. AI Holter report + deployment. Responsible AI debate |
+| 1. From raw ECG to beat-by-beat diagnosis | 9:00 to 11:00 | 1. Explore MIT-BIH.<br>2. A first 1D CNN.<br>3. The leakage trap.<br>4. Think like a cardiologist (rhythm + patient's dominant beat) |
+| 2. From model to clinical tool | 14:00 to 15:30 | 5. Calibration and triage.<br>6. Grad-CAM and counterfactuals.<br>7. AI Holter report + deployment. Responsible AI debate |
 
 ## Quick start
 
