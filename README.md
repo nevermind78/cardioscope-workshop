@@ -56,7 +56,6 @@ checkpoints/            pretrained models (morph, rhythm, context), with calibra
 examples/               three 60 s ECG files of unseen patients for the app
 scripts/                prepare_data.py, train.py
 tools/build_notebooks.py  regenerates the notebooks
-GUIDE_ANIMATEUR.md      instructor guide (French): timing, key messages, plan B
 PROGRAMME_BIOVANCE_EN.md  program for the organizers
 ```
 
