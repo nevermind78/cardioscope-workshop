@@ -2,6 +2,7 @@
 import nbformat as nbf
 
 REPO = "https://github.com/nevermind78/cardioscope-workshop"
+COLAB_BASE = REPO.replace("https://github.com/", "https://colab.research.google.com/github/")
 
 SETUP = r'''# Setup: run this cell first (about 1 minute on Colab)
 %matplotlib inline
@@ -62,7 +63,7 @@ md(f'''
 
 **BIOVANCE 2026, École Polytechnique de Sousse**. Workshop *Deep Learning for Cardiovascular Risk Detection*.
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/YOUR-ACCOUNT/cardioscope-workshop/blob/main/Part1_ECG_to_Diagnosis.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)]({COLAB_BASE}/blob/main/Part1_ECG_to_Diagnosis.ipynb)
 
 Today we build **CardioScope**, an assistant that reads a Holter ECG the way a cardiologist does:
 it finds every heartbeat, labels it, and turns the labels into a patient-level arrhythmic risk profile.
@@ -272,12 +273,12 @@ pd.DataFrame({"my model": summary(ds2["y"], predict_logits(my_model, ds2).argmax
 # PART 2
 # ==========================================================================
 p2 = [
-md('''
+md(f'''
 # CardioScope, Part 2: from model to clinical tool
 
 **BIOVANCE 2026, École Polytechnique de Sousse**. Workshop *Deep Learning for Cardiovascular Risk Detection*.
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/YOUR-ACCOUNT/cardioscope-workshop/blob/main/Part2_Model_to_Clinic.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)]({COLAB_BASE}/blob/main/Part2_Model_to_Clinic.ipynb)
 
 This morning we built a beat classifier and evaluated it honestly. A good score is not enough for a clinical tool:
 
