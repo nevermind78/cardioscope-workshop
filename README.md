@@ -27,11 +27,6 @@ arrhythmic risk profile, and is deployed as a web app they open on their phone.
 2. Afternoon: same for `Part2_Model_to_Clinic.ipynb`. If Colab has reset the machine, the notebook reloads
    the pretrained models of `checkpoints/`.
 
-### Reusing this repository for your own session (instructors)
-
-Replace `YOUR-ACCOUNT` with your GitHub account in `tools/build_notebooks.py` (`REPO` and `REPO_URL`), regenerate
-the notebooks (`python tools/build_notebooks.py`), and push. Without a GitHub repository, leave `YOUR-ACCOUNT` as
-is: the setup cell then asks participants to upload `cardioscope-workshop.zip` instead.
 
 ### Local machine (instructor, CUDA GPU)
 
