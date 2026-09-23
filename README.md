@@ -20,12 +20,18 @@ arrhythmic risk profile, and is deployed as a web app they open on their phone.
 
 ### Google Colab (participants)
 
-1. Replace `YOUR-ACCOUNT` with your GitHub account in the two notebooks (setup cell and badge) and push this folder to GitHub.
-2. Open `Part1_ECG_to_Diagnosis.ipynb` in Colab (*Runtime > Change runtime type > T4 GPU*, optional) and run the cells in order.
-   The setup cell clones the repository and installs `wfdb` and `gradio`; the first lab downloads MIT-BIH from PhysioNet (~90 MB, 1 to 2 min).
-3. Afternoon: `Part2_Model_to_Clinic.ipynb`. If Colab has reset the machine, the notebook reloads the pretrained models of `checkpoints/`.
+1. Open `Part1_ECG_to_Diagnosis.ipynb` on GitHub and click the **Open in Colab** badge at the top
+   (*Runtime > Change runtime type > T4 GPU*, optional), then run the cells in order.
+   The setup cell clones this repository and installs `wfdb` and `gradio`; the first lab downloads MIT-BIH
+   from PhysioNet (~90 MB, 1 to 2 min).
+2. Afternoon: same for `Part2_Model_to_Clinic.ipynb`. If Colab has reset the machine, the notebook reloads
+   the pretrained models of `checkpoints/`.
 
-Without GitHub, leave `YOUR-ACCOUNT` as is: the setup cell then asks for `cardioscope-workshop.zip` and unpacks it.
+### Reusing this repository for your own session (instructors)
+
+Replace `YOUR-ACCOUNT` with your GitHub account in `tools/build_notebooks.py` (`REPO` and `REPO_URL`), regenerate
+the notebooks (`python tools/build_notebooks.py`), and push. Without a GitHub repository, leave `YOUR-ACCOUNT` as
+is: the setup cell then asks participants to upload `cardioscope-workshop.zip` instead.
 
 ### Local machine (instructor, CUDA GPU)
 
